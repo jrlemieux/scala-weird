@@ -1,0 +1,52 @@
+Compiled from "Test1.scala"
+public final class com.playzone.Test1$$anon$1 extends scala.runtime.AbstractPartialFunction<java.lang.Object, java.lang.Object> implements java.io.Serializable {
+  public com.playzone.Test1$$anon$1(com.playzone.Test1);
+    Code:
+       0: aload_1
+       1: ifnonnull     12
+       4: new           #19                 // class java/lang/NullPointerException
+       7: dup
+       8: invokespecial #22                 // Method java/lang/NullPointerException."<init>":()V
+      11: athrow
+      12: aload_0
+      13: aload_1
+      14: putfield      #24                 // Field $outer:Lcom/playzone/Test1;
+      17: aload_0
+      18: invokespecial #25                 // Method scala/runtime/AbstractPartialFunction."<init>":()V
+      21: return
+
+  public final boolean isDefinedAt(java.lang.Object);
+    Code:
+       0: aload_1
+       1: astore_2
+       2: iconst_1
+       3: ireturn
+
+  public final java.lang.Object applyOrElse(java.lang.Object, scala.Function1);
+    Code:
+       0: aload_1
+       1: astore_3
+       2: aload_1
+       3: astore        4
+       5: aload_0
+       6: getfield      #24                 // Field $outer:Lcom/playzone/Test1;
+       9: invokevirtual #37                 // Method com/playzone/Test1.innerPf:()Lscala/PartialFunction;
+      12: aload_1
+      13: invokeinterface #43,  2           // InterfaceMethod scala/PartialFunction.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      18: checkcast     #45                 // class scala/Option
+      21: astore        5
+      23: aload         5
+      25: instanceof    #47                 // class scala/Some
+      28: ifeq          42
+      31: getstatic     #53                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      34: ldc           #55                 // String Something
+      36: invokevirtual #59                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      39: goto          52
+      42: new           #61                 // class scala/MatchError
+      45: dup
+      46: aload         5
+      48: invokespecial #63                 // Method scala/MatchError."<init>":(Ljava/lang/Object;)V
+      51: athrow
+      52: getstatic     #69                 // Field scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+      55: areturn
+}

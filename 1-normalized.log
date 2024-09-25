@@ -1,0 +1,55 @@
+Compiled from "Test.scala"
+public class com.playzone.Test implements com.playzone.TestTrait {
+  public com.playzone.Test();
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #22                 // InterfaceMethod com/playzone/TestTrait.$init$:(Lcom/playzone/TestTrait;)V
+       8: aload_0
+       9: new           #9                  // class com/playzone/Test$$anon$1
+      12: dup
+      13: aload_0
+      14: invokespecial #25                 // Method com/playzone/Test$$anon$1."<init>":(Lcom/playzone/Test;)V
+      17: putfield      #27                 // Field outerPf_2:Lscala/PartialFunction;
+      20: invokestatic  #32                 // Method scala/runtime/Statics.releaseFence:()V
+      23: return
+
+  public scala.PartialFunction innerPf();
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field innerPf:Lscala/PartialFunction;
+       4: areturn
+
+  public scala.PartialFunction outerPf_1();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field outerPf_1:Lscala/PartialFunction;
+       4: areturn
+
+  public void com$playzone$TestTrait$_setter_$innerPf_$eq(scala.PartialFunction);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #37                 // Field innerPf:Lscala/PartialFunction;
+       5: return
+
+  public void com$playzone$TestTrait$_setter_$outerPf_1_$eq(scala.PartialFunction);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #39                 // Field outerPf_1:Lscala/PartialFunction;
+       5: return
+
+  public void run();
+    Code:
+       0: aload_0
+       1: invokestatic  #47                 // InterfaceMethod com/playzone/TestTrait.run$:(Lcom/playzone/TestTrait;)V
+       4: return
+
+  public scala.PartialFunction<java.lang.Object, java.lang.Object> outerPf_2();
+    Code:
+       0: aload_0
+       1: getfield      #27                 // Field outerPf_2:Lscala/PartialFunction;
+       4: areturn
+}
