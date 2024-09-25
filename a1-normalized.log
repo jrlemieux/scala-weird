@@ -1,6 +1,6 @@
-Compiled from "Test.scala"
-public final class com.playzone.Test$$anon$1 extends scala.runtime.AbstractPartialFunction<java.lang.Object, java.lang.Object> implements java.io.Serializable {
-  public com.playzone.Test$$anon$1(com.playzone.Test);
+Compiled from "some-common-name.scala"
+public final class com.playzone.some-common-name$$anon$1 extends scala.runtime.AbstractPartialFunction<java.lang.Object, java.lang.Object> implements java.io.Serializable {
+  public com.playzone.some-common-name$$anon$1(com.playzone.some-common-name);
     Code:
        0: aload_1
        1: ifnonnull     12
@@ -10,7 +10,7 @@ public final class com.playzone.Test$$anon$1 extends scala.runtime.AbstractParti
       11: athrow
       12: aload_0
       13: aload_1
-      14: putfield      #24                 // Field $outer:Lcom/playzone/Test;
+      14: putfield      #24                 // Field $outer:Lcom/playzone/some-common-name;
       17: aload_0
       18: invokespecial #25                 // Method scala/runtime/AbstractPartialFunction."<init>":()V
       21: return
@@ -29,8 +29,8 @@ public final class com.playzone.Test$$anon$1 extends scala.runtime.AbstractParti
        2: aload_1
        3: astore        4
        5: aload_0
-       6: getfield      #24                 // Field $outer:Lcom/playzone/Test;
-       9: invokevirtual #37                 // Method com/playzone/Test.innerPf:()Lscala/PartialFunction;
+       6: getfield      #24                 // Field $outer:Lcom/playzone/some-common-name;
+       9: invokevirtual #37                 // Method com/playzone/some-common-name.innerPf:()Lscala/PartialFunction;
       12: aload_1
       13: invokeinterface #43,  2           // InterfaceMethod scala/PartialFunction.apply:(Ljava/lang/Object;)Ljava/lang/Object;
       18: checkcast     #45                 // class scala/Option

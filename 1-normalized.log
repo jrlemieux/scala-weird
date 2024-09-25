@@ -1,16 +1,16 @@
-Compiled from "Test.scala"
-public class com.playzone.Test implements com.playzone.TestTrait {
-  public com.playzone.Test();
+Compiled from "some-common-name.scala"
+public class com.playzone.some-common-name implements com.playzone.TestTrait {
+  public com.playzone.some-common-name();
     Code:
        0: aload_0
        1: invokespecial #18                 // Method java/lang/Object."<init>":()V
        4: aload_0
        5: invokestatic  #22                 // InterfaceMethod com/playzone/TestTrait.$init$:(Lcom/playzone/TestTrait;)V
        8: aload_0
-       9: new           #9                  // class com/playzone/Test$$anon$1
+       9: new           #9                  // class com/playzone/some-common-name$$anon$1
       12: dup
       13: aload_0
-      14: invokespecial #25                 // Method com/playzone/Test$$anon$1."<init>":(Lcom/playzone/Test;)V
+      14: invokespecial #25                 // Method com/playzone/some-common-name$$anon$1."<init>":(Lcom/playzone/some-common-name;)V
       17: putfield      #27                 // Field outerPf_2:Lscala/PartialFunction;
       20: invokestatic  #32                 // Method scala/runtime/Statics.releaseFence:()V
       23: return
